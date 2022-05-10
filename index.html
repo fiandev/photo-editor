@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>basic image editor</title>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <h1>Basic Image Editor</h1>
+      <p>Web aplikasi sederhana untuk mengedit foto dan menyimpan nya</p>
+    </div>
+    <div class="box">
+      <div class="box-header">
+        <figure class="image-box">
+          <img class="image">
+        </figure>
+        <div class="button-box">
+          <input type="file" id="input-file" accept="image/*">
+          <label for="input-file" class="button">Choose An Image</label>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="form-group">
+          <label for="size">size<span class="value-active"> 0</span> </label>
+          <input type="range" id="size" class="input-range" min="0" max="100" value="100">
+        </div>
+        <div class="form-group">
+          <label for="blur">Opacity<span class="value-active"> 0</span> </label>
+          <input type="range" id="opacity" class="input-range" min="0" max="100" value="100">
+        </div>
+        <div class="form-group">
+          <label for="blur">GrayScale<span class="value-active"> 0</span> </label>
+          <input type="range" id="grayscale" class="input-range" min="0" max="200" value="0">
+        </div>
+        <div class="form-group">
+          <label for="blur">Saturate<span class="value-active"> 0</span> </label>
+          <input type="range" id="saturate" class="input-range" min="0" max="200" value="100">
+        </div>
+        <div class="form-group">
+          <label for="blur">Blur<span class="value-active"> 0</span> </label>
+          <input type="range" id="blur" class="input-range" min="0" max="500" value="0">
+        </div>
+        <div class="form-group">
+          <label for="contrast">Contrast<span class="value-active"> 0</span> </label>
+          <input type="range" id="contrast" class="input-range" min="0" max="200" value="100">
+        </div>
+        <div class="form-group">
+          <label for="hue">Hue Rotate<span class="value-active"> 0</span> </label>
+          <input type="range" id="hue" class="input-range" min="0" max="360" value="0">
+        </div>
+        <div class="form-group">
+          <label for="sepia">Sepia<span class="value-active"> 0</span> </label>
+          <input type="range" id="sepia" class="input-range" min="0" max="100" value="0">
+        </div>
+        <div class="form-group">
+          <label for="rotate_x">Rotate X<span class="value-active"> 0</span> </label>
+          <input type="range" id="rotate_x" class="input-range" min="0" max="360" value="0">
+        </div>
+        <div class="form-group">
+          <label for="rotate_y">Rotate Y<span class="value-active"> 0</span> </label>
+          <input type="range" id="rotate_y" class="input-range" min="0" max="360" value="0">
+        </div>
+        <div class="form-group">
+          <label for="border_radius">border radius<span class="value-active"> 0</span> </label>
+          <input type="range" id="border_radius" class="input-range" min="0" max="9999" value="0">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+      integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"
+      integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  <script 
+      src="./script.js">
+  </script>
+</body>
+</html>

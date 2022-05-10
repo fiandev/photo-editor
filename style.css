@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --font: 'Open Sans';
+  --gray: #f4f7fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  box-sizing: border-box;
+  
+}
+
+body {
+  background: var(--gray);
+}
+.image {
+  transition: .2s;
+}
+.container {
+  position: relative;
+  width: 70%;
+  margin: 30px auto;
+}
+
+.header {
+  position: relative;
+  padding: 30px;
+  background: #333;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #f3f3f3;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .box-header {
+  width: 48%;
+}
+
+.box .box-body {
+  width: 40%;
+  margin: 0 auto;
+  display: none;
+}
+
+.box .box-header .image-box {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  background: var(--gray);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.box .box-header .image-box .image {
+  width: 100%;
+  objevt-fit: contain;
+}
+
+.box .box-header #input-file {
+  display: none;
+}
+
+.box .box-header .button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: royalblue;
+  height: 45px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+}
+
+.box .box-body .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.box .box-body .form-group label {
+  font-size: 14px;
+}
+.box .box-body .form-group .input-range {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  
+  .box {
+    flex-direction: column;
+  }
+  
+  .box .box-header {
+    margin-bottom: 20px;
+  }
+  
+  .box .box-header,
+  .box .box-body {
+    width: 100%;
+  }
+}
