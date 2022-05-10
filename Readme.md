@@ -7,7 +7,8 @@ sebuah program bernama "Basic Image Editor" yang dibuat dengan bahasa pemrograma
 - [x] HTML
 - [x] CSS
 - [x] JavaScript
-
+- [x] library Dom To Image [js]
+- [x] library FileSaver [js]
 ### lainnya
 
 - [x] font (Open Sans)
@@ -17,10 +18,11 @@ sebuah program bernama "Basic Image Editor" yang dibuat dengan bahasa pemrograma
 
 ### live demo
 
-![image1](https://github.com/candradwicahyo/basic-image-editor/blob/master/preview1.jpg)
+![image1](https://github.com/fiandev/photo-editor/blob/master/preview1.jpg)
 
-![image2](https://github.com/candradwicahyo/basic-image-editor/blob/master/preview2.jpg)
+![image2](https://github.com/fiandev/photo-editor/blob/master/preview2.jpg)
 
-[tekan link ini](https://candradwicahyo.github.io/basic-image-editor) untuk mencoba program ini
+[tekan link ini](https://fiandev.github.io/photo-editor) untuk mencoba program ini
 
-> dibuat oleh **candra dwi cahyo**
+> diperbarui oleh **Fiandev (fian)**
+> difork dari **candra dwi cahyo**
